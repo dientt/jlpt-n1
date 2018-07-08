@@ -37,6 +37,7 @@ $conn->close();
     <button id="reading">読み方</button>
     <button id="meaning">意味</button>
     <button id="example">例文</button>
+    <button id="next">Next</button>
     <h1 id="show_data"></h1>
   </div>
 </body>
@@ -54,6 +55,9 @@ $conn->close();
         });
         $("#example").click(function () {
             $("#show_data").text(example);
+        });
+        $("#next").click(function () {
+            location.reload();
         });
     });
 </script>
